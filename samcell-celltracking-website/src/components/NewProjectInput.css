@@ -1,0 +1,8 @@
+.new-project-input-container {
+    width: min(60vw, 800px);
+    height: fit-content;
+    justify-self: center;
+    padding: min(2vw, 20px);
+    background-color: rgb(91, 91, 91);
+    margin-top: 18vh;
+}

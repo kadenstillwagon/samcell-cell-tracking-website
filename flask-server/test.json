@@ -1,0 +1,17 @@
+{"Average Data": {
+    "Perimeter": 121.6365403903028, 
+    "Area": 725.4835820895522, 
+    "Convex Hull Area": 885.9328358208955, 
+    "Convex Hull Perimeter": 107.57644519285549, 
+    "Min Bounding Radius": 5.2508779909701495, 
+    "Max Bounding Radius": 21.58497785123829, 
+    "Number of Surrounding Cells": 2.7134328358208957, 
+    "Spikiness": 0.21442816954893232, 
+    "Elongation": 0.658359607401456, 
+    "Compactness (1)": 22.516527462917047, 
+    "Compactness (2)": 0.22814115180554237, 
+    "Circularity (1)": 0.6250875576037623, 
+    "Circularity (2)": 0.7260507431400168, 
+    "Circularity (3)": 22.516527462917047, "Circularity (4)": 4.516947277246641, "Convexity (1)": 0.9236290620443919, "Convexity (2)": 0.9183688729083996, "Roughness (1)": 1.0945008167365964, "Roughness (2)": 0.0976053775840255, "Roughness (3)": 0.017575116000260797}}
+
+    

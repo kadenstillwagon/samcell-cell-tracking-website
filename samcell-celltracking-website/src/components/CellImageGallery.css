@@ -1,0 +1,23 @@
+.image-gallery-container {
+    padding-top: 2vw;
+    width: 80vw;
+    margin-left: 10vw;
+    min-height: 100vw;
+    height: auto;
+    background-color: rgb(220, 220, 220);
+    margin-top: 5vw;
+    margin-bottom: 5vw;
+}
+
+.image-gallery-row {
+    display: flex;
+    height: fit-content;
+    width: fit-content;
+}
+
+.bottom-grid-addition {
+    width: 80vw;
+    height: 0.5vw;
+    background-color: rgb(220, 220, 220);
+    margin-bottom: 5vw;
+}

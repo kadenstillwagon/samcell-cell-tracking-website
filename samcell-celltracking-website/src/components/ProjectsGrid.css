@@ -1,0 +1,23 @@
+.project-grid-container {
+    padding-top: 2vw;
+    width: 80vw;
+    margin-left: 10vw;
+    min-height: 100vw;
+    height: auto;
+    background-color: rgb(220, 220, 220);
+    margin-top: 5vw;
+    margin-bottom: 5vw;
+}
+
+.project-grid-row {
+    display: flex;
+    height: fit-content;
+    width: fit-content;
+}
+
+.bottom-grid-addition {
+    width: 80vw;
+    height: 0.5vw;
+    background-color: rgb(121, 121, 121);
+    margin-bottom: 5vw;
+}

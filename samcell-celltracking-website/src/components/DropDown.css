@@ -1,0 +1,12 @@
+.drop_down_container {
+    margin-bottom: min(1.5vw, 20px);
+    margin-left: min(2.3vw, 41px);
+    margin-right: min(2.3vw, 41px);
+    width: fit-content;
+}
+
+.options_box {
+    width: min(12vw, 185px);
+    height: min(14vw, 210px);
+    overflow:scroll; 
+}

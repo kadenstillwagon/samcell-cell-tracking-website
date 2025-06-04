@@ -1,0 +1,8 @@
+.image-and-segmentation-upload-container {
+    width: min(60vw, 575px);
+    height: fit-content;
+    justify-self: center;
+    margin-top: min(10vw, 40px);
+    background-color: rgb(210, 210, 210);
+    color: rgb(31, 31, 31);
+}

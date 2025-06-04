@@ -1,0 +1,11 @@
+.project-block-container {
+    display: block;
+    margin-bottom: 2vw;
+    margin-left: 2vw;
+    text-align: left;
+    align-items: center;
+    color: rgb(16, 16, 16);
+    overflow: hidden;
+    /* box-shadow: rgb(20, 20, 20) 2px 2px 4px; */
+    /* border-radius: 15px; */
+}
