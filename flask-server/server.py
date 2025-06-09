@@ -1,4 +1,4 @@
-from flask import Flask, request, send_file
+from flask import Flask, request, send_file, send_from_directory
 from flask_cors import CORS
 import os
 from datetime import datetime
@@ -15,8 +15,8 @@ import pandas as pd
 import numpy as np
 from tqdm import tqdm
 
-app = Flask(__name__)
-CORS(app, origins=["http://localhost:5174"])
+app = Flask(__name__, static_folder=os.path.join(os.path.dirname(__file__), '../samcell-celltracking-website/dist'), static_url_path="")
+CORS(app, origins=["http://localhost:5173"])
 
 @app.route("/")
 def main_page():
@@ -971,6 +971,10 @@ def get_pca_metrics_all_cell_masks_single_image():
 
     return {"Success": True, "Parameter Dictionary": pc_dict, "Outliers": outliers_list}
 
+# Serve Frontend
+@app.route("/<path:path>")
+def serve_react(path="index.html"):
+    return send_from_directory(app.static_folder, path)
 
 
 if __name__ == "__main__":

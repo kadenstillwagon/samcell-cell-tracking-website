@@ -32,7 +32,6 @@ def get_cell_metrics(image, project, image_date, cell_mask, cropped_image, index
     #minor_axis_pair, minor_axis_distance = find_minor_axis(cell_mask, major_axis_pair)
 
     ##Convex Hull
-    
     convex_hull_vertices, convex_hull_edges = get_convex_hull(cropped_image, border_points)
     convex_hull_area = get_convex_hull_area(cropped_image, convex_hull_edges)
     convex_hull_perimeter = get_convex_hull_perimeter(cropped_image, convex_hull_edges)
