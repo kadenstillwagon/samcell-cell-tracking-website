@@ -1,0 +1,15 @@
+services:
+  - runtime: python
+    type: web
+    name: samcell-cell-tracking
+    buildCommand: |
+      cd samcell-celltracking-website
+      npm install
+      npm run build
+    startCommand: "gunicorn samcell_cell_tracking.wsgi:application"
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.11
+    plan: free
+    autoDeploy: true
+    rootDir: flask-server
