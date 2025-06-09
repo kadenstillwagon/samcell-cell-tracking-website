@@ -15,14 +15,23 @@ import pandas as pd
 import numpy as np
 from tqdm import tqdm
 
-app = Flask(__name__, static_folder=os.path.join(os.path.dirname(__file__), '../samcell-celltracking-website/dist'), static_url_path="")
+app = Flask(__name__, static_folder="dist", static_url_path="")
 CORS(app, origins=["http://localhost:5173"])
 
 print("✅ Flask app loaded")
 
-@app.route("/")
-def main_page():
-    return "Hello"
+# Serve Frontend
+@app.route('/')
+def serve_index():
+    return send_from_directory(app.static_folder, 'index.html')
+
+@app.route('/<path:path>')
+def serve_static(path):
+    file_path = os.path.join(app.static_folder, path)
+    if os.path.isfile(file_path):
+        return send_from_directory(app.static_folder, path)
+    else:
+        return send_from_directory(app.static_folder, 'index.html')  # for SPA routing
 
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 #    Getting Project Data

@@ -6,6 +6,7 @@ services:
       cd samcell-celltracking-website
       npm install
       npm run build
+      cp -r dist ../flask-server/dist
     startCommand: "gunicorn server:app"
     envVars:
       - key: PYTHON_VERSION
