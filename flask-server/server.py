@@ -18,6 +18,8 @@ from tqdm import tqdm
 app = Flask(__name__, static_folder=os.path.join(os.path.dirname(__file__), '../samcell-celltracking-website/dist'), static_url_path="")
 CORS(app, origins=["http://localhost:5173"])
 
+print("✅ Flask app loaded")
+
 @app.route("/")
 def main_page():
     return "Hello"

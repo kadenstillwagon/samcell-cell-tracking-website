@@ -6,7 +6,7 @@ services:
       cd samcell-celltracking-website
       npm install
       npm run build
-    startCommand: "gunicorn samcell_cell_tracking.wsgi:application"
+    startCommand: "gunicorn server:app"
     envVars:
       - key: PYTHON_VERSION
         value: 3.11
